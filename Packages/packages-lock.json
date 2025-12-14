@@ -37,7 +37,7 @@
     },
     "com.meta.xr.sdk.core": {
       "version": "83.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -53,7 +53,7 @@
     },
     "com.meta.xr.sdk.interaction": {
       "version": "83.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
@@ -63,7 +63,7 @@
     },
     "com.meta.xr.sdk.interaction.ovr": {
       "version": "83.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.meta.xr.sdk.core": "83.0.0",
@@ -86,14 +86,6 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
-    },
-    "com.soupday.cc3_unity_tools": {
-      "version": "file:C:/Users/kenzy/Downloads/CCiC-Unity-Tools-2.1.0/CCiC-Unity-Tools-2.1.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.collab-proxy": "1.14.12"
-      }
     },
     "com.unity.ai.navigation": {
       "version": "2.0.9",
@@ -202,7 +194,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.2",
-      "depth": 2,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -277,14 +269,14 @@
     },
     "com.unity.textmeshpro": {
       "version": "5.0.0",
-      "depth": 2,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.ugui": "2.0.0"
       }
     },
     "com.unity.timeline": {
-      "version": "1.8.9",
+      "version": "1.8.10",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -346,13 +338,14 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.openxr": {
-      "version": "1.16.0",
+      "version": "1.16.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.inputsystem": "1.6.3",
         "com.unity.xr.core-utils": "2.3.0",
         "com.unity.xr.management": "4.4.0",
+        "com.unity.modules.androidjni": "1.0.0",
         "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
