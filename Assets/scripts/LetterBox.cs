@@ -3,7 +3,7 @@ using TMPro;
 
 public class LetterBox : MonoBehaviour
 {
-    public string letter;          // The actual letter (e.g. "A")
+    public string letter;          
     public TextMeshPro label1;
     public TextMeshPro label2;
     public TextMeshPro label3;
@@ -11,7 +11,7 @@ public class LetterBox : MonoBehaviour
     public TextMeshPro label5;
     public TextMeshPro label6;
     
-          // Reference to the text on the box
+
 
     public void SetLetter(string newLetter)
     {
