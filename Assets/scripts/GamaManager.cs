@@ -7,13 +7,13 @@ public class GamaManager : MonoBehaviour
     [Header("Slots in order (left -> right)")]
     public Transform[] slots;
 
-    [Header("Correct answer (same length as slots)")]
+    [Header("Correct answer")]
     public string correctWord = "apple";
 
-    [Header("How far each slot searches for a letter cube (meters)")]
-    public float slotRadius = 0.08f; // try 0.05–0.12 depending on spacing
+    [Header("How far each slot searches for a letter cube")]
+    public float slotRadius = 0.08f; 
 
-    [Header("Optional: set this to only your letter-cube layer")]
+    [Header("Only your letter-cube layer")]
     public LayerMask letterLayer = ~0;
 
     [Header("Optional UI feedback")]
@@ -29,7 +29,7 @@ public class GamaManager : MonoBehaviour
             return;
         }
 
-        // store letters in a list (as you asked)
+ 
         List<string> letters = new List<string>(slots.Length);
         string playerWord = "";
 
@@ -37,16 +37,16 @@ public class GamaManager : MonoBehaviour
         {
             Transform slot = slots[i];
 
-            // Find colliders near this slot (NOT hierarchy-based)
+         
             Collider[] hits = Physics.OverlapSphere(slot.position, slotRadius, letterLayer);
 
-            // Choose the closest LetterBox found to this slot
+           
             LetterBox best = null;
             float bestDist = float.MaxValue;
 
             foreach (Collider h in hits)
             {
-                // collider might be on a child, so use InParent
+               
                 LetterBox lb = h.GetComponentInParent<LetterBox>();
                 if (lb == null) continue;
 
@@ -69,6 +69,6 @@ public class GamaManager : MonoBehaviour
         Debug.Log($"Player word: {playerWord} | Correct: {correctWord} | Result: {correct}");
 
         if (resultText != null)
-            resultText.text = correct ? "✅ Correct!" : $"❌ Try again: {playerWord}";
+            resultText.text = correct ? " Correct!" : $" Try again: {playerWord}";
     }
 }
