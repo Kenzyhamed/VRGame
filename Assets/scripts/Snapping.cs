@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class SnapToPoint : MonoBehaviour
 {
-    // Drag ALL snap points here
+  
     public Transform[] snapPoints;
 
-    // How close the cube must be before it snaps
+   
     public float snapDistance = 0.2f;
 
     void Update()
